@@ -20,7 +20,7 @@ public class NavigateMethods  {
         driver.navigate().forward(); // Go forward to the next page
         driver.navigate().refresh();
 
-        driver.close();
-        driver.quit();
+        driver.close(); //close chrome
+        driver.quit();  //quit
     }
 }
