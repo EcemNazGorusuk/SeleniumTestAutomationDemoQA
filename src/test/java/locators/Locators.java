@@ -21,10 +21,11 @@ public class Locators {
 
         element.clear();
         driver.findElement(By.cssSelector("input#userEmail")).sendKeys(userEmail+"2"); //<input id="userEmail/>
-
         driver.findElement(By.cssSelector("#userForm textarea.form-control ")).sendKeys("example address");
         driver.findElement(By.cssSelector("#permanentAddress-wrapper div textarea.form-control")).sendKeys("example address2");
         driver.findElement(By.cssSelector("label")); // <label>
-
+        //driver.findElement(By.xpath("//div[@class='left-pannel']"));
+        WebElement element2=driver.findElements(By.cssSelector("div.element-group ul.menu-list li ")).get(1);
+        element2.click();
     }
 }
